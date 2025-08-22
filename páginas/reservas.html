@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registro de recorridos CITYTUR CATAMARCA</title>
+    <title>Registro de reservas CITYTUR CATAMARCA</title>
   </head>
   <body>
     <header>
-      <h1>Registro de recorridos CITYTUR CATAMARCA</h1>
+      <h1>Registro de reservas CITYTUR CATAMARCA</h1>
       <nav>
         <a href="../index.html">Principal</a>
-        <a href="reservas.html">Registro de reserva</a>
+        <a href="recorridos.html">Registro de recorridos</a>
       </nav>
     </header>
 
@@ -21,7 +21,6 @@
           <select name="origen" id="origen" required>
             <option value="córdoba">Estación Terminal</option>
           </select>
-
           <br /><br />
 
           <label for="destino">Selección de Destino: </label>
@@ -30,19 +29,17 @@
             <option value="elrodeo">El Rodeo</option>
             <option value="lagruta">La Gruta</option>
           </select>
-
           <br /><br />
 
           <label for="fecha">Fecha del Recorrido: </label>
           <input type="date" name="fecha" id="fecha" required />
-
           <br /><br />
 
           <label for="hora">Hora de Salida del Recorrido: </label>
           <input type="time" name="hora" id="hora" required />
           <br /><br />
 
-          <label for="cantidad">Cantidad Maxima de Pasajes: </label>
+          <label for="cantidad">Cantidad de Pasajeros: </label>
           <input
             type="number"
             name="cantidad"
@@ -53,7 +50,26 @@
           />
           <br /><br />
 
+          <label for="nombre">Nombre: </label>
+          <input type="text" name="nombre" id="nombre" required />
           <br /><br />
+
+          <label for="apellido">Apellido: </label>
+          <input type="text" name="apellido" id="apellido" required />
+          <br /><br />
+
+          <label for="dni">DNI: </label>
+          <input
+            type="text"
+            name="dni"
+            id="dni"
+            pattern="\d{8}"
+            maxlength="8"
+            required
+            placeholder="8 dígitos"
+          />
+          <br /><br />
+
           <input type="submit" id="agregar" name="agregar" value="Agregar" />
           <input type="submit" id="editar" name="editar" value="Editar" />
           <input type="submit" id="eliminar" name="eliminar" value="Eliminar" />
@@ -62,6 +78,7 @@
         </form>
       </section>
     </main>
+
     <footer><div>Sitio Oficial de CITYTUR CATAMARCA-2025</div></footer>
   </body>
 </html>
