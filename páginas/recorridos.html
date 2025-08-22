@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#"> 
+
+        <label for="origen">Selección de Origen: </label>
+        <select name="origen" id="origen" required>
+            <option value="córdoba">Estación Terminal</option>
+        </select>
+
+        <br><br>
+
+        <label for="destino">Selección de Destino: </label>
+        <select name="destino" id="destino" required>
+            <option value="balcozna">Balcozna</option>
+            <option value="elrodeo">El Rodeo</option>
+            <option value="lagruta">La Gruta</option>
+        </select>
+
+        <br><br>
+
+        <label for="fecha">Fecha del Recorrido: </label>
+        <input type="date" name="fecha" id="fecha" required>
+
+        <br><br>
+        
+        <label for="hora">Hora de Salida del Recorrido: </label>
+        <input type="time" name="hora" id="hora" required>
+        <br><br>
+        
+        <label for="cantidad">Cantidad de Pasajeros: </label>
+        <input type="number" name="cantidad" id="cantidad" min="1" max="50" required>
+
+        <br><br>
+        <input type="submit" id="agregar" name="agregar"value="Agregar">
+        <input type="submit" id="editar" name="editar" value="Editar">
+        <input type="submit" id="eliminar" name="eliminar" value="Eliminar">
+        <input type="reset" id="cancelar" name="cancelar" value="Cancelar">
+
+    </form>
+</body>
+</html>
