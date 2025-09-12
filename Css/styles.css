@@ -4,6 +4,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  background-color: #f0f9f4;
 }
 
 main {
@@ -11,5 +12,12 @@ main {
 }
 
 nav {
-  background-color: rgb(13 110 253);
+  background-color: #0077b6 !important;
+}
+
+footer {
+  background-color: #023e8a !important;
+}
+section p {
+  color: #333;
 }
