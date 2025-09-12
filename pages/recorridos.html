@@ -1,67 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registro de recorridos CITYTUR CATAMARCA</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Css/styles.css">
   </head>
   <body>
     <header>
-      <h1>Registro de recorridos CITYTUR CATAMARCA</h1>
-      <nav>
-        <a href="../index.html">Principal</a>
-        <a href="reservas.html">Registro de reserva</a>
+      <h1 class="text-center text-black my-3">
+        Registro de recorridos CITYTUR CATAMARCA
+      </h1>
+      <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+          <a class="navbar-brand" href="#">CITYTUR CATAMARCA</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reservas.html">Registro de reserva</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <main>
-      <section>
+    <main class="container my-5 flex-grow-1">
+      <section class="card card-translucent shadow p-4 mx-auto" style="max-width: 600px;">
         <form action="#">
-          <label for="origen">Selección de Origen: </label>
-          <select name="origen" id="origen" required>
-            <option value="córdoba">Estación Terminal</option>
-          </select>
+          
+          <div class="mb-3">
+            <label for="origen" class="form-label">Selección de Origen</label>
+            <select name="origen" id="origen" class="form-select" required>
+              <option value="córdoba">Estación Terminal</option>
+            </select>
+          </div>
 
-          <br /><br />
+          <div class="mb-3">
+            <label for="destino" class="form-label">Selección de Destino</label>
+            <select name="destino" id="destino" class="form-select" required>
+              <option value="balcozna">Balcozna</option>
+              <option value="elrodeo">El Rodeo</option>
+              <option value="lagruta">La Gruta</option>
+            </select>
+          </div>
 
-          <label for="destino">Selección de Destino: </label>
-          <select name="destino" id="destino" required>
-            <option value="balcozna">Balcozna</option>
-            <option value="elrodeo">El Rodeo</option>
-            <option value="lagruta">La Gruta</option>
-          </select>
+          <div class="mb-3">
+            <label for="fecha" class="form-label">Fecha del Recorrido</label>
+            <input type="date" name="fecha" id="fecha" class="form-control" required />
+          </div>
 
-          <br /><br />
+          <div class="mb-3">
+            <label for="hora" class="form-label">Hora de Salida del Recorrido</label>
+            <input type="time" name="hora" id="hora" class="form-control" required />
+          </div>
 
-          <label for="fecha">Fecha del Recorrido: </label>
-          <input type="date" name="fecha" id="fecha" required />
+          <div class="mb-3">
+            <label for="cantidad" class="form-label">Cantidad Máxima de Pasajes</label>
+            <input
+              type="number"
+              name="cantidad"
+              id="cantidad"
+              class="form-control"
+              min="1"
+              max="50"
+              required
+            />
+          </div>
 
-          <br /><br />
-
-          <label for="hora">Hora de Salida del Recorrido: </label>
-          <input type="time" name="hora" id="hora" required />
-          <br /><br />
-
-          <label for="cantidad">Cantidad Maxima de Pasajes: </label>
-          <input
-            type="number"
-            name="cantidad"
-            id="cantidad"
-            min="1"
-            max="50"
-            required
-          />
-          <br /><br />
-
-          <br /><br />
-          <input type="submit" id="agregar" name="agregar" value="Agregar" />
-          <input type="submit" id="editar" name="editar" value="Editar" />
-          <input type="submit" id="eliminar" name="eliminar" value="Eliminar" />
-          <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
-          <br /><br />
+          <div class="d-flex flex-wrap gap-2 justify-content-center">
+            <button type="submit" id="agregar" name="agregar" class="btn btn-success">
+              Agregar
+            </button>
+            <button type="submit" id="editar" name="editar" class="btn btn-warning">
+              Editar
+            </button>
+            <button type="submit" id="eliminar" name="eliminar" class="btn btn-danger">
+              Eliminar
+            </button>
+            <button type="reset" id="cancelar" name="cancelar" class="btn btn-secondary">
+              Cancelar
+            </button>
+          </div>
         </form>
       </section>
     </main>
-    <footer><div>Sitio Oficial de CITYTUR CATAMARCA-2025</div></footer>
+
+    <footer class="text-center p-3 bg-dark bg-opacity-75 text-white mt-5">
+      Sitio Oficial de
+      <a class="text-white fw-bold" href="index.html">CITYTUR CATAMARCA-2025</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
