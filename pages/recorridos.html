@@ -5,49 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="/Css/styles.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <title>Registro de recorridos CITYTUR CATAMARCA</title>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header>
       <h1 class="text-center text-red">Bienvenido a CITYTUR CATAMARCA</h1>
-      
+
       <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
         <div class="container">
           <a class="navbar-brand text-white" href="/index.html">CITYTUR</a>
           <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Registro de recorridos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="reservas.html">Registro de reserva</a>
-            </li>
-          </ul>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Registro de recorridos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reservas.html">Registro de reserva</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
-  
+      </nav>
+    </header>
+
     <main class="container my-5 flex-grow-1">
       <section
         class="card card-translucent shadow p-4 mx-auto"
         style="max-width: 600px"
       >
-        <form action="#">
+        <form id="formulario" action="#">
           <div class="mb-3">
             <label for="origen" class="form-label">Selección de Origen</label>
             <select name="origen" id="origen" class="form-select" required>
@@ -147,5 +153,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../javascript/recorridos.js"></script>
   </body>
 </html>
