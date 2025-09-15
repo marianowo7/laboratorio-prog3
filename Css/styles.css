@@ -30,3 +30,7 @@
 footer {
   background-color: #023e8a !important;
 }
+
+.error {
+  color: red;
+}
