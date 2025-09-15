@@ -1,43 +1,32 @@
-body {
-  background: url("../img/elrodeo.jpg") no-repeat center center fixed;
-  background-size: cover;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: #f0f9f4;
+.custom-navbar {
+  background-color: #023e8a;
 }
 
-.card-translucent {
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 1rem;
+.custom-navbar .navbar-collapse {
+  justify-content: center; /* centra los links horizontalmente */
+}
+
+.custom-navbar .nav-link {
+  border: 2px solid #ffffff;   /* borde blanco */
+  padding: 5px 12px;           /* espacio dentro del botón */
+  border-radius: 5px;          /* bordes redondeados */
+  text-decoration: none;       /* quita subrayado */
+  color: #ffffff;              /* color del texto */
+  transition: all 0.3s;        /* transición suave */
+  margin: 0 5px;               /* espacio entre botones */
+}
+
+.custom-navbar .nav-link:hover {
+  background-color: #90e0ef;   /* fondo al pasar el mouse 
+  color: #023e8a;              /* color del texto */
+  border-color: #90e0ef;       /* borde también cambia */
 }
 
 .navbar-brand {
   font-weight: bold;
-  /* color: #0d6efd !important; */
-}
-
-.navbar-custom {
-  background-color: rgba(33, 37, 41, 0.85);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-.navbar-custom .nav-link {
-  color: #fff;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-/* .navbar-custom .nav-link:hover {
-  color: #0d6efd;
-} */
-
-nav {
-  background-color: #0077b6 !important;
+  color: #ffffff;
 }
 
 footer {
   background-color: #023e8a !important;
-}
-
-section p {
-  color: white;
 }

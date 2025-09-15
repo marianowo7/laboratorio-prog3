@@ -3,47 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registro de recorridos CITYTUR CATAMARCA</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/Css/styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand fw-bold text-white" href="#"
-            >Bienvenido a CITYTUR CATAMARCA</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link text-white" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="reservas.html"
-                  >Registro de reserva</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
 
+    <link rel="stylesheet" href="/Css/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <title>Registro de recorridos CITYTUR CATAMARCA</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <h1 class="text-center text-red">Bienvenido a CITYTUR CATAMARCA</h1>
+      
+      <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container">
+          <a class="navbar-brand text-white" href="/index.html">CITYTUR</a>
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Registro de recorridos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservas.html">Registro de reserva</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
     <main class="container my-5 flex-grow-1">
       <section
         class="card card-translucent shadow p-4 mx-auto"
@@ -143,7 +141,7 @@
       </section>
     </main>
 
-    <footer class="text-center p-3 bg-dark bg-opacity-75 text-white mt-5">
+    <footer class="text-center p-3 text-white">
       Sitio Oficial de
       <a class="text-white fw-bold" href="index.html">CITYTUR CATAMARCA-2025</a>
     </footer>
